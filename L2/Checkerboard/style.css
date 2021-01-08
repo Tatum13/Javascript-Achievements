@@ -1,0 +1,17 @@
+body{
+    background-color:#C9C9C6;
+}
+h1{
+    color:rgb(3, 3, 3);
+}
+table, th, td {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    color:#000;
+}
+
+td{
+    height:150px;
+    width:150px;
+}
