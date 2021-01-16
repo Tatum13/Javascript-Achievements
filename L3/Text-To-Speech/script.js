@@ -52,9 +52,9 @@
     
     
     
-    const onderwerp = ["Kerst", "", ""];
-    const werkwoord = ["is", "", "drinks"];
-    const restwoord = ["leuk", "", "coffee"];
+    const onderwerp = ["dogs", "", ""];
+    const werkwoord = ["are", "", "drinks"];
+    const restwoord = ["cool", "", "coffee"];
         
     let plaatjes = ["https://cdn.pixabay.com/photo/2018/07/09/17/44/baby-elephant-3526681__340.png", "https://i.kym-cdn.com/photos/images/newsfeed/001/666/080/25a.jpg", "https://thumbs.dreamstime.com/b/smiling-heart-cartoon-open-arms-nice-image-all-projects-love-representing-version-its-suggest-idea-40930153.jpg", "https://observer.com/wp-content/uploads/sites/2/2020/05/yoda-art-observer.jpg?quality=80"]
     let arrayLength = onderwerp.length;
