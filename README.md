@@ -14,6 +14,11 @@ Les 2:
 -Functions:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Functions
 
 
+Les 3:
+
+-Text To Speech:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Text-To-Speech/
+
+
 Les 4:
 
 -WebXR Demo:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/WebXR-Demo/
