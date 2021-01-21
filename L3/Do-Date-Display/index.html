@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script>
+    function toonDatum() {
+        // Schrijf hier jouw code 
+
+        var myday = new Date();
+        var day = myday.getDay();
+        var month = myday.getMonth();
+        var year = myday.getFullYear();
+        var d = myday.getDate();
+    
+
+        console.log(year);
+        console.log(month);
+        console.log(day);
+
+        document.getElementById("dag").innerHTML = day
+        alert("dag is" + datum.getFullDay())
+
+        document.getElementById("Maand").innerHTML = month
+        alert("Maand is" + datum.getFullMonth());
+
+        document.getElementById("jaar").innerHTML = year
+        alert("Het jaar is" + datum.getFullYear());
+    }
+    window.addEventListener('DOMContentLoaded', toonDatum);
+
+</script>
+</body>
+
+<body>
+
+    <h2>Do Date Display</h2>
+
+    <div id="dag">
+
+    </div>
+
+    <div id="maand">
+
+    </div>
+
+    <div id="jaar">
+
+    </div>
+
+</html>
