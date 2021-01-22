@@ -1,16 +1,26 @@
 <html>
     <head></head>
     <body>
-        <meter></meter>      
-        <input type="button"></input>
-        <h1>..</h1>
+        <meter value = "100" min = "0" low = "40" high = "100" max = "100" id="healthbar"></meter>      
+        <input type="button" onclick = "attack();"></input>
+        <h1 id="winner">..</h1>
         
         <script>
-            document.getElementById("").addEventListener("click",(e)=>{
-                //Hier code om de meter leeg te maken
-                //Haal via het DOM de elementen binnen
-            
-            });       
+         var healthbar = document.getElementById('healthbar')     
+         var win = document.getElementById('winner')
+
+         function attack(){
+             oldhealth = healthbar.value;
+             damage = Math.floor(Math.random() * 12);
+
+             if(oldhealth - damage <= 0){
+                 healthbar.value = 0;
+                 win.innerText = "gewonnen"
+             }
+             else{
+                 healthbar.value = oldhealth - damage;
+             }
+         }
         </script>
     </body>
 </html>
