@@ -31,3 +31,8 @@ Les 4:
 Les 5:
 
 -Quiz:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Quiz/
+
+
+Les 6:
+
+-API:https://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Device-Orientation-API/sensors.html

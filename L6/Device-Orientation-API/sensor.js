@@ -36,12 +36,22 @@ function showDataColor(alpha, beta, gamma){
 
 function activateVoice(alpha, beta, gamma){
     // voice if Z-axis rotation > value
-    if(alpha > 120){
-        let myTxt = "Rotate me why. Not do.";  
+    if(alpha > 120 && alpha > beta && alpha > gamma){
+        let myTxt = "Yo Does this work?";  
         sayItLoud(myTxt); // text 2 speech
-
         // laat het ook in de HTML zien
         document.getElementById('voice').innerHTML = myTxt;
+        }
+        else if(beta > 120 && beta > alpha && beta > gamma){
+            let myTxt = "YES IT WORKS!"
+            sayItLoud(myTxt)
+            document.getElementById('voice').innerHTML = myTxt;
+        }
+        else if(gamma > 120 && gamma > alpha && gamma > beta){
+            let myTxt = "It kinda works.."
+            sayItLoud(myTxt)
+            document.getElementById('voice').innerHTML = myTxt;
+            
         }
     else{
         // haal de tekst weg
@@ -52,8 +62,14 @@ function activateVoice(alpha, beta, gamma){
 function showMyImage(alpha, beta, gamma){
     // image if X-axis > value
     if(beta > 40){
-        document.getElementById('myImage').src = "rick and morty.jpg"; // show image
+        document.getElementById('myImage').src = "rickandmorty.jpg"; // show image
         }
+    else if(alpha > 40){
+        document.getElementById('myImage').src = "rickandmorty.jpg";
+    }
+    else if(gamma > 40){
+        document.getElementById('myImage').src = "rickandmorty.jpg";
+    }
         else {
             document.getElementById('myImage').src = ""; // no image
         }
