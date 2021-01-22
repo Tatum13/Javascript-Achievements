@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Master</title>
+</head>
+
+<body>
+    <h1 id='button'>werkt dit?</h1>
+    <h1 id="eindgetal"></h1>
+</body>
+
+<script>
+    document.getElementById("button")
+    .addEventListener("click", rollingForStats);
+    function rollingForStats(){
+    //Jouw code hier
+    var nummers = []
+    for(var x = 0; x < 4; x++){
+        var temp = Math.floor((Math.random() * 10) + 1)
+        if(temp > 6){
+            temp = 6
+        }
+        nummers.push(temp)
+    }
+    nummers = nummers.sort((a, b) => b - a)
+    nummers.pop(3)
+    var eindgetal = nummers[0] + nummers[1] + nummers[2]
+    document.getElementById("eindgetal").innerText = eindgetal
+}
+</script>
+
+</html>
