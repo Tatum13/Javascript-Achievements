@@ -11,25 +11,21 @@
     function toonDatum() {
         // Schrijf hier jouw code 
 
-        var myday = new Date();
-        var day = myday.getDay();
-        var month = myday.getMonth();
-        var year = myday.getFullYear();
-        var d = myday.getDate();
+        var date = new Date();
+        var dag = date.getDate();
+        var maand = date.getMonth()+ 1;
+        var jaar = date.getFullYear();
+
     
 
-        console.log(year);
-        console.log(month);
-        console.log(day);
+        document.getElementById("dag").innerHTML = dag
+        alert("dag is" + dag);
 
-        document.getElementById("dag").innerHTML = day
-        alert("dag is" + datum.getFullDay())
+        document.getElementById("maand").innerHTML = maand
+        alert("Maand is" + maand);
 
-        document.getElementById("Maand").innerHTML = month
-        alert("Maand is" + datum.getFullMonth());
-
-        document.getElementById("jaar").innerHTML = year
-        alert("Het jaar is" + datum.getFullYear());
+        document.getElementById("jaar").innerHTML = jaar
+        alert("Het jaar is" + jaar);
     }
     window.addEventListener('DOMContentLoaded', toonDatum);
 

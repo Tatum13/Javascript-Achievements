@@ -20,6 +20,8 @@ Les 3:
 
 -Text To Speech:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Text-To-Speech/
 
+-Do Date Display:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Do-Date-Display/
+
 
 Les 4:
 
