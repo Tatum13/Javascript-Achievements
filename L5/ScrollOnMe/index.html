@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll on me</title>
+</head>
+
+<body>
+    <h1 id = "help" style = "word-wrap: break-word;">Werkt dit??????????</h1>
+
+</body>
+<script>
+    h1 = document.getElementById("help")
+    document.addEventListener("wheel", () => {
+        help.innerText =help.innerText + "?"
+        document.addEventListener("click", () => {
+            help.innerText = "Werkt dit??????????"
+        })
+    })
+    
+</script>
+</html>
