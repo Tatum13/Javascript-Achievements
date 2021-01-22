@@ -12,8 +12,8 @@ let playerData = {}; // object, hierin worden de game gegevens opgeslagen
 let quizNummer = 1; // voorbereiden automatisch 2e quiz startem
 
 
-function init(){
-  quiz = quiz1; // kies de quiz
+function init(quis){
+  quiz = quis; // kies de quiz
   //  quiz = quiz2; // kies de quiz
   initQuiz(); // start de quiz
   
@@ -85,8 +85,18 @@ function finishQuiz() {
   questionBox.style.display = "none";
   resultBox.style.display = "block";
   quizWrapper.style.background = "silver";
-  resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
+  var prijs;
+  if (playerData.goodAnswers > 2) {
+    prijs = "Je hebt meer kennis over mij gewonnen"
+    }
+  else{
+    prijs = "Er is geen prijs"
+  }
+  resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "<br>" + prijs + "</h2><button id=\"quizbutton\">Start quiz 2</button>";
+  document.getElementById('quizbutton').addEventListener("click", ()=>{
+    init(quiz2)
+  })
 }
 
 
-init(); // start it
+init(quiz1); // start it

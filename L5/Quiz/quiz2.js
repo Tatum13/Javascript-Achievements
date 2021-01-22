@@ -4,7 +4,7 @@ const quiz2 =
     "quizMetaData":
     {
         "title": "Achievement-2",
-        "imageURI": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/x3y3z3k-1568041112.jpg?crop=0.987xw:0.790xh;0.00160xw,0.128xh&resize=980:*"
+        "imageURI": "rickandmorty.jpg"
 
     },
     "quizContent":		
