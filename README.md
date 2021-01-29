@@ -4,7 +4,7 @@ Les 1:
 
 -Tijd met Javascript:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/TijdMetJavascript
 
--Turtle:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Turtle/
+-Turtle:http://28879.hosts1.ma-cloud.nl/Javascript-Achievements/Turtle/Demo.html
 
 
 Les 2:
